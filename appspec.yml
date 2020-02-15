@@ -4,6 +4,9 @@ files:
   - source: /
     destination: /var/www/html
     discard-paths: yes
-
+hooks:
+  BeforeInstall:
+    - location: ./beforeInstallHook.sh
+      runas: root
 
 
